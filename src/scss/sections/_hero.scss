@@ -1,0 +1,132 @@
+.hero {
+  background-image: url("../img/illustrations/hero-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include adaptiveValue(padding-top, 40, 30, 1920, 360, 1);
+  @include adaptiveValue(padding-bottom, 50, 40, 1920, 360, 1);
+  background-position: 0 100%;
+
+  &__inner {
+    justify-content: space-around;
+    @include adaptiveValue(gap, 30, 15, 1920, 992, 1);
+    padding: 0 50px;
+    @include adaptiveValue(padding-right, 50, 0, 1600, 992, 1);
+    @include adaptiveValue(padding-left, 50, 0, 1600, 992, 1);
+
+    @media screen and (max-width: 767.98px) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+
+  &__img {
+    width: 100%;
+    flex: 0 1 446px;
+    padding-bottom: 70%;
+
+    img {
+      object-fit: contain;
+    }
+
+    @media screen and (max-width: 767.98px) {
+      padding-bottom: 100%;
+      flex: unset;
+    }
+
+    @media screen and (max-width: 575.98px) {
+      padding-bottom: 120%;
+      flex: unset;
+    }
+
+  }
+
+  &__info {
+    max-width: 525px;
+    grid-auto-rows: min-content;
+
+    @media screen and (max-width: 767.98px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__rankings {
+    @include adaptiveValue(margin-bottom, 20, 10, 1920, 992, 1);
+    background-color: #e2eaed;
+    border-radius: 18px;
+    display: flex;
+    padding: 7px 5px 7px 50px;
+    max-width: 362px;
+    font-weight: 500;
+    position: relative;
+    min-height: 34px;
+    line-height: 1.2;
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 34px;
+      border-radius: 18px;
+      background-color: #feaa25;
+      position: absolute;
+      background-image: url('../img/icons/checkmark.png');
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    @media screen and (max-width: 575.98px) {
+      font-size: 14px;
+      min-height: 31px;
+
+      &::before {
+        height: 31px;
+      }
+    }
+  }
+
+  &__title {
+    @include adaptiveValue(margin-bottom, 25, 15, 1920, 992, 1);
+    line-height: 1.25;
+  }
+
+  &__text {
+    @include adaptiveValue(font-size, 18, 16, 1920, 992, 1);
+    @include adaptiveValue(margin-bottom, 40, 20, 1920, 992, 1);
+    font-size: 18px;
+    color: var(--secondary-font-color);
+    line-height: 1.5;
+
+    @media screen and (max-width: 1199.98px) {
+      max-width: 400px;
+    }
+  }
+
+  &__btns {
+    @include adaptiveValue(gap, 30, 20, 1920, 992, 1);
+
+    @media screen and (max-width: 767.98px) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__link {
+    @media screen and (max-width: 767.98px) {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__link-watch {
+    color: var(--primary-color);
+    &::after {
+      background-color:var(--primary-color);
+    }
+  }
+}

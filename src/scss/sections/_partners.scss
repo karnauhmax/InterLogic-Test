@@ -1,0 +1,33 @@
+.partners {
+  padding-top: 114px;
+  padding-bottom: 150px;
+
+
+  @include adaptiveValue(padding-top, 114, 50, 1600, 360, 1);
+  @include adaptiveValue(padding-bottom, 150, 45, 1600, 360, 1);
+
+
+  &__inner {
+    @include adaptiveValue(row-gap, 70, 50, 1920, 768, 1);
+    grid-template-columns: 1fr;
+  }
+
+  &__title {
+    font-size: var(--font-size-primary);
+  }
+
+  &__track {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    @include scrollbar(rgb(231, 229, 229), var(--primary-color), 10px, vertical, 5px, var(--primary-color));
+    padding-bottom: 20px;
+  }
+
+  &__list {
+    @include adaptiveValue(column-gap, 50, 25, 1920, 768, 1);
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+  }
+}

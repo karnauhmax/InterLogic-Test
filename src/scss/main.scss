@@ -1,0 +1,27 @@
+// base
+@import "./vendor/normalize";
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "helpers";
+
+// components
+@import "./components/header";
+@import "./components/footer";
+
+//sections
+
+@import "./sections/hero";
+@import "./sections/partners";
+@import "./sections/features";
+@import "./sections/jackpots";
+@import "./sections/action";
+@import "./sections/benefits";
+@import "./sections/pricing";
+@import "./sections/faq";
+@import "./sections/download";
+@import "./sections/reviews";
+@import "./sections/ultimate-features";
+
+

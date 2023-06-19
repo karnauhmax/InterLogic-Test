@@ -1,0 +1,40 @@
+:root {
+
+  //container variables
+
+  --container-width: 1210px;
+  --container-paddings: 0 20px;
+
+  //font variables
+
+  --font-family-primary: "Poppins";
+  --font-size-primary: 16px;
+
+  --title-font-size: 60px;
+  --subtitle-font-size: 36px;
+
+  --primary-font-color: #242f51;
+  --secondary-font-color: #616368;
+
+  //color variables
+
+  --primary-color: #2500f9;
+  --primary-color-dark: #2306ca;
+  --primary-light-color: #2563ff;
+  --grey-color: #f5f7fa;
+  --light-grey-color: #f4f7f9;
+  --dark-grey-color: #999ca5;
+  --white-color: #fff;
+
+  --item-light-color: #f55767;
+  --item-light2-color: #40975f;
+
+  //transition variables
+
+  --transition-duration: 0.3s;
+
+  //border
+
+  --primary-border-radius: 29px;
+  --secondary-border-radius: 9px;
+}

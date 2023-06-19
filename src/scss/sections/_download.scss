@@ -1,0 +1,79 @@
+.download {
+  padding-top: 15px;
+
+  //padding out of container
+  &__inner {
+
+    @media screen and (max-width: 991.98px) {
+      flex-direction: column;
+      row-gap: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &__info {
+    grid-auto-rows: min-content;
+    row-gap: 35px;
+    @include adaptiveValue(row-gap, 35, 20, 1600, 360, 1);
+    flex: 0 1 632px;
+
+
+
+    p {
+    }
+
+    @media screen and (max-width: 991.98px) {
+      flex: unset
+    }
+  }
+
+  &__details {
+    row-gap: 25px;
+
+    @include adaptiveValue(row-gap, 25, 5, 1920, 360, 1);
+  }
+
+  &__title {
+    font-size: 48px;
+
+    @include adaptiveValue(font-size, 48, 30, 1600, 768, 1);
+  }
+
+  &__links {
+    column-gap: 40px;
+    row-gap: 10px;
+    @include adaptiveValue(column-gap, 40, 20, 1600, 768, 1);
+
+    @media screen and (max-width: 359.98px) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    margin-bottom: -64px;
+    @include adaptiveValue(margin-bottom, -64, -40, 1600, 768, 1);
+    position: relative;
+    z-index: 3;
+
+    @media screen and (max-width: 991.98px) {
+      @include adaptiveValue(margin-bottom, -65, -57, 992, 768, 1);
+    }
+
+    @media screen and (max-width: 767.98px) {
+      @include adaptiveValue(margin-bottom, -57, -30, 768, 360, 1);
+    }
+
+    @media screen and (max-width: 359.98px) {
+      @include adaptiveValue(margin-bottom, -30, -25, 359.98, 320, 1);
+
+    }
+  }
+
+  picture, &__img {
+    align-self: start;
+
+    @media screen and (max-width: 991.98px) {
+      align-self: end;
+    }
+  }
+}
