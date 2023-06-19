@@ -10,5 +10,6 @@
 - Task was checked by w3c validator, pagespeed insights, yoksel html tree.
 
 - You can see live preview here: https://karnauhmax.github.io/InterLogic-Test/
+- Or see more details about the code here: https://github.com/karnauhmax/InterLogic-Test
 
 
