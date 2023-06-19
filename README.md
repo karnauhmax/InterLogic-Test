@@ -8,6 +8,7 @@
 - Minimum media queries
 - Used images optimization. WEBP/Picture tag. Squoosh/TinyPNG for size optimization
 - Task was checked by w3c validator, pagespeed insights, yoksel html tree.
+- Task was completed in 4 days
 
 - You can see live preview here: https://karnauhmax.github.io/InterLogic-Test/
 - Or see more details about the code here: https://github.com/karnauhmax/InterLogic-Test
